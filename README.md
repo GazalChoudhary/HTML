@@ -1,80 +1,151 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<style type="text/css">
+.container {
+	padding: 10px;
+	color: "white";
+}
 
-<!-- Bootstrap CSS -->
-<link rel="stylesheet"
-	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-	crossorigin="anonymous">
+.container signin{
+		width:70%;
+		}
+input[type=text], input[type=password] {
+	width: 70%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
+}
 
-<title>Hello, world!</title>
-</head>
-<body>
-	<div class="jumbotron">
-		<div class="container">
-			<h1>NIIT TECHNOLOGIES</h1>
-			<p>Hello welcome to the place its going to be really hard
-				travelling here daily</p>
-			<a href="#" class="btn btn-primary btn-lg">More....</a>	
-		</div>	
-		</div>
-		
-		<div class="container">
-			<div class="row">
-			<div class="col-md-4">
-				<h3>Heading 1</h3>
-				<p>However, this template differs from cover sheets and cover
-					letters. A cover sheet is a type of document sent with fax which
-					provides the recipient with additional information. On the other
-					hand, a cover letter is usually attached to a resume when you apply
-					for a job.</p>
-				<p>
-					<a href="#" class="btn btn-default btn-lg">More....</a>
-				</p></div>
-				
-				<div class="col-md-4">
-				<h3>Heading 2</h3>
-				<p>However, this template differs from cover sheets and cover
-					letters. A cover sheet is a type of document sent with fax which
-					provides the recipient with additional information. On the other
-					hand, a cover letter is usually attached to a resume when you apply
-					for a job.</p>
-				<p>
-					<a href="#" class="btn btn-default btn-lg">More....</a>
-				</p></div>
-				
-				<div class="col-md-4">
-				<h3>Heading 3</h3>
-				<p>However, this template differs from cover sheets and cover
-					letters. A cover sheet is a type of document sent with fax which
-					provides the recipient with additional information. On the other
-					hand, a cover letter is usually attached to a resume when you apply
-					for a job.</p>
-				<p>
-					<a href="#" class="btn btn-default btn-lg">More....</a>
-				</p>	
-		</div>
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
+
+
+.registerbtn {
+	background-color: #000000;
+	color: white;
+	padding: 16px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 70%;
+	opacity: 0.9;
+}
+
+fieldset {
+	font-size: 12px;
+	padding: 10px;
+	width: 500px;
+	line-height: 2;
+	align: "center";
+}
+
+.registerbtn:hover {
+	opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+	color: dodgerblue;
+}
+
+.col-75 {
+	float: left;
+	width: 75%;
+	margin-top: 6px;
+}
+
+.body {
+	color:#FFD700;
 	
-	</div>
+}
 
+#footer {
+	background-color: black;
+	color: white;
+	clear: both;
+	text-align: center;
+	padding: 5px;
+}
 
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script
-		src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
+.signin {
+	background-color: #f1f1f1;
+	text-align: center;
+	width: 40%;
+}
+
+fieldset {
+	text-align: "center";
+	margin: 0 auto;
+}
+</style>
+</head>
+<body class="body">
+<body background="C:\Users\Training\Desktop\kl.png">
+
+	<fieldset class="fieldset"><legend align="center"><h1 ><b>Library Registration</b></h1></legend>
+			<div class="container">
+				
+				<h2><p>Please fill in this form to create an account.</p></h2>
+				<hr width="100%" align="left">
+				<label for="name"><b>Name</b></label> <input type="text"
+					placeholder="Enter your name" name="name" required> <br>
+				<label for="email"><b>Email</b></label> <input type="text"
+					placeholder="Enter Email" name="email" required> <br>
+					
+					<label for="date"><b>Birth date:</b></label><BR>
+
+<input type="date" id="date" name="Birth date"
+       value="2001-01-01"
+       min="1970-01-01" max="2017-12-31">
+					
+			<br>	<label for="gender"><b>Gender</b></label> <input type="radio"
+					name="gender" value="male" checked> Male <input
+					type="radio" name="gender" value="female"> Female <input
+					type="radio" name="gender" value="other"> Other <br>
+				<div class="col-75">
+				<label for="country"><b>College</b></label>
+					<select id="College" name="College">
+						<option value="Manav Rachna University">Manav Rachna
+							University</option>
+						<option value="Amity University">Amity University</option>
+						<option value="Chandigarh University">Chandigarh
+							University</option>
+						<option value="MVN University">MVN University</option>
+					</select>
+				</div><br>
+
+				<BR> <label for="psw"><b>Password</b></label> <input
+					type="password" placeholder="Enter Password" name="psw" required>
+				<br> <label for="psw-repeat"><b>Repeat Password</b></label> <input
+					type="password" placeholder="Repeat Password" name="psw-repeat"
+					required>
+				<br><label for="txt"><b>Special Needs</b></label>	
+				<font><i><textarea rows="4" cols="50">Type here name of your favourite authors and books!!</textarea></i></font>
+				<hr width="100%" align="left">
+				
+
+				<p>
+					By creating an account you agree to our <a href="#">Terms &
+						Privacy</a>.
+				</p>
+				<button type="submit" class="registerbtn"><b>Register</b></button>
+			</div>
+
+			<div width: 100%>
+				<p>
+					Already have an account? <a href="#">Sign in</a>.
+				</p>
+			</div>
+			</fieldset>
+	</form>
+<div id="footer">copyright@ Elibrary.com</div>
+</body>
 </body>
 </html>
